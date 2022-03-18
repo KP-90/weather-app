@@ -38,13 +38,13 @@ async function getWeather(city, state) {
 
 // API to get icons for the weather. Requires info from the getWeather() functions api
 async function getIcon(id) {
-    const iconObject = await fetch(`http://openweathermap.org/img/wn/${id}@2x.png`, {mode:'cors'})
+    const iconObject = await fetch(`https://openweathermap.org/img/wn/${id}@2x.png`, {mode:'cors'})
     return iconObject
 }
 
 // get geolocation then calls api for forecast
 async function getForecast(city, state) {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${state},US&limit=1&appid=${API}`, {mode: 'cors'})
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city},${state},US&limit=1&appid=${API}`, {mode: 'cors'})
     const coords = await response.json()
     console.log(coords)
     let lat = coords[0].lat
