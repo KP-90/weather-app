@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#main {
+    text-align: center;
+}
+
+#inputs {
+    padding: 12px;
+}
+
+#cityInput {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 2px;
+    padding: 10px;
+    font-size: 16px;
+    height: 50px;
+}
+
+#stateSelection {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 2px;
+    padding: 10px;
+    font-size: 16px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: 0px;
+}
+
+button {
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+#content {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 75vh;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#display {
+    text-align: center;
+    justify-self: center;
+    width: 50vw;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px black;
+    display: inline-flex;
+}
+
+#icon {
+    width: 50px;
+    height: 50px;
+}
+
+#currentTemp {
+    position: relative;
+    top: -10px;
+    font-size: 48px;
+}
+
+#f {
+    position: relative;
+    top: -15px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#detailBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: 100%;
+    line-height: 15px;
+    text-align: left;
+    color: gray;
+}
+
+#detailBox > * {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-search {
+    font-size: 16px;
+}
+
+/* Forecast Section */
+#details {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+
+#cards {
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.card {
+    margin: 5px 10px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid blue;
+}
